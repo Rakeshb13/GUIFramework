@@ -26,8 +26,6 @@ public class BillingAndPayments {
 	private WebElement cus_StatisticsLink;
 	
 	
-	
-	
 	@FindBy(linkText = "New invoice")
 	private WebElement ven_NewInvoiceLink;
 	
@@ -43,6 +41,31 @@ public class BillingAndPayments {
 	@FindBy(linkText = "Statistics")
 	private WebElement ven_StatisticsLink;
 
+	
+	public WebElement getCus_StatisticsLink() {
+		return cus_StatisticsLink;
+	}
+
+	public WebElement getVen_NewInvoiceLink() {
+		return ven_NewInvoiceLink;
+	}
+
+	public WebElement getVen_listLink() {
+		return ven_listLink;
+	}
+
+	public WebElement getVen_listOfTemplatesLink() {
+		return ven_listOfTemplatesLink;
+	}
+
+	public WebElement getVen_PaymentsLink() {
+		return ven_PaymentsLink;
+	}
+
+	public WebElement getVen_StatisticsLink() {
+		return ven_StatisticsLink;
+	}
+	
 	public WebElement getCus_NewInvoiceLink() {
 		return cus_NewInvoiceLink;
 	}
