@@ -33,10 +33,6 @@ public class Customer_NewInvoice {
 	
 	@FindBy(xpath = "//input[@value='Cancel']")
 	private WebElement CancelBtn;
-	
-	public WebDriver getDriver() {
-		return driver;
-	}
 
 	public WebElement getCustomerDropdown() {
 		return CustomerDropdown;
