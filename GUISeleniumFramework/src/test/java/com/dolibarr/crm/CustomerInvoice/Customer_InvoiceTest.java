@@ -41,7 +41,7 @@ public class Customer_InvoiceTest extends BaseClass{
     	bP.getCus_listLink().click();
     	Customer_List cL = new Customer_List(driver);
     	List<WebElement> invoiceList = cL.getInvoceList();
-    	
+    	System.out.println(InvoiceRef);
     	cL.getSearchRef().sendKeys(InvoiceRef);
     	Thread.sleep(4000);
     	cL.getSearchButton().click();
