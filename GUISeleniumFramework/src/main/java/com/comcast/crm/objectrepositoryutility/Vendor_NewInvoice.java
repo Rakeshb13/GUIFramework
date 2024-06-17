@@ -22,7 +22,7 @@ public class Vendor_NewInvoice {
 	@FindBy(id = "radio_standard")
 	private WebElement standardRadioButton;
 	
-	@FindBy(id = "ui-datepicker-trigger")
+	@FindBy(id = "reButtonNow")
 	private WebElement invoiceDate;
 	
 	public WebElement getSupp_InvoiceRefText() {
