@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-16T13:06:37Z" name="Default suite" finished-at="2024-06-16T13:06:45Z" duration-ms="7860">
+  <suite started-at="2024-06-17T11:42:43Z" name="Default suite" finished-at="2024-06-17T11:42:55Z" duration-ms="11257">
     <groups>
     </groups>
-    <test started-at="2024-06-16T13:06:37Z" name="Default test" finished-at="2024-06-16T13:06:45Z" duration-ms="7860">
-      <class name="com.comcast.crm.contacttest.SampleTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:37Z" name="configBS" finished-at="2024-06-16T13:06:37Z" duration-ms="41" status="PASS">
+    <test started-at="2024-06-17T11:42:43Z" name="Default test" finished-at="2024-06-17T11:42:55Z" duration-ms="11257">
+      <class name="com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:43Z" name="configBS" finished-at="2024-06-17T11:42:43Z" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:37Z" name="configBC" finished-at="2024-06-16T13:06:39Z" duration-ms="1960" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:43Z" name="configBC" finished-at="2024-06-17T11:42:47Z" duration-ms="3785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:39Z" name="configBM" finished-at="2024-06-16T13:06:41Z" duration-ms="1743" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:47Z" name="configBM" finished-at="2024-06-17T11:42:49Z" duration-ms="2218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createConTactTest()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:41Z" name="createConTactTest" finished-at="2024-06-16T13:06:45Z" duration-ms="3511" status="PASS">
+        <test-method signature="createInVoice()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:49Z" name="createInVoice" finished-at="2024-06-17T11:42:54Z" duration-ms="4346" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createConTactTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:45Z" name="configAM" finished-at="2024-06-16T13:06:45Z" duration-ms="322" status="PASS">
+        </test-method> <!-- createInVoice -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:54Z" name="configAM" finished-at="2024-06-17T11:42:54Z" duration-ms="468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:45Z" name="configAC" finished-at="2024-06-16T13:06:45Z" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:54Z" name="configAC" finished-at="2024-06-17T11:42:55Z" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.contacttest.SampleTest@22f31dec]" started-at="2024-06-16T13:06:45Z" name="configAS" finished-at="2024-06-16T13:06:45Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-17T11:42:55Z" name="configAS" finished-at="2024-06-17T11:42:55Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.comcast.crm.contacttest.SampleTest -->
+      </class> <!-- com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

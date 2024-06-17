@@ -13,7 +13,7 @@ public class Homepage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(linkText = "admin")
+	@FindBy(xpath = "//span[text()='admin']")
 	private WebElement adminLink;
 	
 	@FindBy(xpath = "//a[@title='Logout (Keyboard shortcut ALT + l)']")
@@ -21,6 +21,11 @@ public class Homepage {
 	
 	@FindBy(id = "mainmenua_billing")
 	private WebElement billingAndPaymnets;
+		
+
+	public WebDriver getDriver() {
+		return driver;
+	}
 
 
 	public WebElement getAdminLink() {

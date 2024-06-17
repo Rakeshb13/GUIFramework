@@ -13,17 +13,23 @@ public class Customer_NewInvoice {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(id = "select2-socid-container")
+	@FindBy(xpath = "//span[text()='Select a third party'][1]")
 	private WebElement CustomerDropdown;
+	
+	@FindBy(xpath = "//input[@class='select2-search__field']")
+	private WebElement CustomerTextField;
 	
 	@FindBy(id = "radio_standard")
 	private WebElement standardRadioButton;
 	
-	@FindBy(id = "ui-datepicker-trigger")
+	@FindBy(id = "reButtonNow")
 	private WebElement invoiceDate;
 	
 	@FindBy(id = "select2-cond_reglement_id-container")
 	private WebElement paymentTermDropdown;
+	
+	@FindBy(id = "select2-selectmode_reglement_id-container")
+	private WebElement paymentMethodDropdown;
 	
 	@FindBy(id = "note_public")
 	private WebElement notePublic;
@@ -33,9 +39,20 @@ public class Customer_NewInvoice {
 	
 	@FindBy(xpath = "//input[@value='Cancel']")
 	private WebElement CancelBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'PROV')]")
+	private WebElement InvoiceRef;
+
+	public WebElement getInvoiceRef() {
+		return InvoiceRef;
+	}
 
 	public WebElement getCustomerDropdown() {
 		return CustomerDropdown;
+	}
+	
+	public WebElement getCustomerTextField() {
+		return CustomerTextField;
 	}
 
 	public WebElement getStandardRadioButton() {
@@ -60,6 +77,9 @@ public class Customer_NewInvoice {
 
 	public WebElement getCancelBtn() {
 		return CancelBtn;
+	}
+	public WebElement getPaymentMethodDropdown() {
+		return paymentMethodDropdown;
 	}
 	
 }

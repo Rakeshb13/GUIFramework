@@ -40,6 +40,10 @@ public class BillingAndPayments {
 	
 	@FindBy(linkText = "Statistics")
 	private WebElement ven_StatisticsLink;
+	
+	
+	
+	
 
 	
 	public WebElement getCus_StatisticsLink() {
