@@ -25,6 +25,18 @@ public class Customer_List {
 	
 	@FindBy (xpath = "//input[@name='search_ref']")
 	private WebElement searchRef;
+	
+	
+	public WebElement getSearchRef() {
+		return searchRef;
+	}
+
+
+	public void setSearchRef(WebElement searchRef) {
+		this.searchRef = searchRef;
+	}
+
+
 	public WebElement getsatausDropdown() {
 		return satausDropdown;
 	}
