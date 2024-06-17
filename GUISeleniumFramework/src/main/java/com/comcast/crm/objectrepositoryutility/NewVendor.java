@@ -16,7 +16,8 @@ public class NewVendor extends WebDriverUtility{
 	 }
 		 @FindBy(linkText="New Vendor")
 		 private WebElement newvendor;
-
+		 @FindBy(linkText="Third-parties") 
+		    private WebElement thirdparties;
 		 
 		 @FindBy(id="name")
 		 private WebElement thirdpartyname;
@@ -25,6 +26,7 @@ public class NewVendor extends WebDriverUtility{
 		 WebElement createthirdpartybutton;
 		
 		 public void newVendor(String thrdpartyname) {
+			 thirdparties.click();
 			 newvendor.click();
 			 thirdpartyname.sendKeys(thrdpartyname);
 			 createthirdpartybutton.click();
