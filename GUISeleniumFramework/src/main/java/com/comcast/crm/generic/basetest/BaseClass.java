@@ -79,11 +79,11 @@ public class BaseClass {
 	    @BeforeMethod(groups = {"smokeTest", "regressionTest"})
 		public void configBM() throws Throwable {
 			System.out.println("=login=");
-			String URL = System.getProperty("url" ,fLib.getDataFromPropertiesFile("url") );
-			String USERNAME = System.getProperty("username" , fLib.getDataFromPropertiesFile("username"));
-			String PASSWORD = System.getProperty("password" , fLib.getDataFromPropertiesFile("password"));
-			LoginPage lp = new LoginPage(driver);
-			lp.login(URL, USERNAME, PASSWORD);
+			//String URL = System.getProperty("url" ,fLib.getDataFromPropertiesFile("url") );
+			//String USERNAME = System.getProperty("username" , fLib.getDataFromPropertiesFile("username"));
+			//String PASSWORD = System.getProperty("password" , fLib.getDataFromPropertiesFile("password"));
+			//LoginPage lp = new LoginPage(driver);
+			//lp.login(URL, USERNAME, PASSWORD);
 		}
 	    
 	    
