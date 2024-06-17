@@ -7,6 +7,17 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	
+	public WebElement getUsenameTB() {
+		return UsenameTB;
+	}
+
+	public WebElement getPasswordTB() {
+		return PasswordTB;
+	}
+
+	public WebElement getLoginBtn() {
+		return LoginBtn;
+	}
 	WebDriver driver;
 	
 	public LoginPage(WebDriver driver)

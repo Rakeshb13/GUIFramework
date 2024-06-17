@@ -18,10 +18,31 @@ public class Homepage {
 	
 	@FindBy(xpath = "//a[@title='Logout (Keyboard shortcut ALT + l)']")
 	private WebElement LogoutBtn;
+	
+	@FindBy(id = "mainmenua_billing")
+	private WebElement billingAndPaymnets;
+
+
+	public WebElement getAdminLink() {
+		return adminLink;
+	}
+
+
+	public WebElement getLogoutBtn() {
+		return LogoutBtn;
+	}
+
+
+	public WebElement getBillingAndPaymnets() {
+		return billingAndPaymnets;
+	}
+
 
 	public void logout() {
 		
 		adminLink.click();
 		LogoutBtn.click();
 	}
+
+
 }
