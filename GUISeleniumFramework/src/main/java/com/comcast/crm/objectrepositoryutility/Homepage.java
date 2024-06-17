@@ -23,9 +23,7 @@ public class Homepage {
 	private WebElement billingAndPaymnets;
 		
 
-	public WebDriver getDriver() {
-		return driver;
-	}
+	
 
 
 	public WebElement getAdminLink() {

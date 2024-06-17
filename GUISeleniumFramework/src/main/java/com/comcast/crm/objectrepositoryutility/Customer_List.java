@@ -26,7 +26,24 @@ public class Customer_List {
 	@FindBy (xpath = "//input[@name='search_ref']")
 	private WebElement searchRef;
 	
+	@FindBy (xpath = "//button[@name='button_search_x']")
+	private WebElement searchButton;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+
+	public WebElement getSatausDropdown() {
+		return satausDropdown;
+	}
+
+
+	public WebElement getSearchButton() {
+		return searchButton;
+	}
+
+
 	public WebElement getSearchRef() {
 		return searchRef;
 	}
