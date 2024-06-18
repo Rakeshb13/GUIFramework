@@ -22,7 +22,8 @@ public class Homepage {
 	@FindBy(id = "mainmenua_billing")
 	private WebElement billingAndPaymnets;
 		
-
+@FindBy(xpath="//span[text()='Products | Services']")
+private WebElement productsServicesLnk;
 	
 
 
@@ -40,11 +41,14 @@ public class Homepage {
 		return billingAndPaymnets;
 	}
 
-
+	public WebElement getProductsAndServiceslnk() {
+		return productsServicesLnk;
+	}
 	public void logout() {
 		
-		adminLink.click();
-		LogoutBtn.click();
+
+		getAdminLink().click();
+		getLogoutBtn().click();
 	}
 
 
