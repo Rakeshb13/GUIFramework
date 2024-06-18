@@ -7,9 +7,9 @@
         <methods>
           <include name="configBM"/>
           <include name="configAM"/>
-          <include name="createInVoice"/>
           <include name="configBS"/>
           <include name="configBC"/>
+          <include name="CreateInvoiceAndPaymentAndValidateForCustomer"/>
           <include name="configAS"/>
           <include name="configAC"/>
         </methods>

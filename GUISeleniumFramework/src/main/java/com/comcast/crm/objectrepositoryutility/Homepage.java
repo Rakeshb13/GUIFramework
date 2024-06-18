@@ -25,6 +25,17 @@ public class Homepage {
 @FindBy(xpath="//span[text()='Products | Services']")
 private WebElement productsServicesLnk;
 	
+     @FindBy(xpath="//span[text()='Third-parties']")
+      private WebElement Thirdpatry;
+
+	public WebElement getProductsServicesLnk() {
+		return productsServicesLnk;
+	}
+
+
+	public WebElement getThirdpatry() {
+		return Thirdpatry;
+	}
 
 
 	public WebElement getAdminLink() {

@@ -64,7 +64,7 @@ public class Customer_NewInvoice {
 	@FindBy(xpath = "//a[text()='Enter payment']")
 	private WebElement enterPaymentLink;
 	
-	@FindBy(className = "amount classfortooltip")
+	@FindBy(xpath = "//span[@class='amount classfortooltip']")
 	private WebElement dueAmount;
 	
 
