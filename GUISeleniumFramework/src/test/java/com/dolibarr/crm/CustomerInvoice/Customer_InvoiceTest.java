@@ -7,7 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.util.Assert;
 import com.comcast.crm.generic.basetest.BaseClass;
+import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
 import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.BillingAndPayments;
 import com.comcast.crm.objectrepositoryutility.Customer_List;
@@ -38,10 +41,23 @@ public class Customer_InvoiceTest extends BaseClass{
      	
      	
     	String InvoiceRef = cNI.getInvoiceRef().getText();
+    	
+//    	String[] a = InvoiceRef.split(" ");
+//    	
+//    	System.out.println(a.length);
+//    	
+//    	
+//    	InvoiceRef = a[0];
+//    	
+//    	System.out.println(InvoiceRef);
+    	
+    	InvoiceRef = InvoiceRef.substring(0, 9);
+    	System.out.println(InvoiceRef);
+    	
     	bP.getCus_listLink().click();
     	Customer_List cL = new Customer_List(driver);
     	List<WebElement> invoiceList = cL.getInvoceList();
-    	System.out.println(InvoiceRef);
+    	
     	cL.getSearchRef().sendKeys(InvoiceRef);
     	Thread.sleep(4000);
     	cL.getSearchButton().click();
@@ -49,11 +65,34 @@ public class Customer_InvoiceTest extends BaseClass{
     	
     	for(WebElement i:invoiceList)
     	{
-    		System.out.println(i.getText());
+    		if(i.equals(invoiceList))
+    		{
+    			//org.testng.Assert.assertEquals(i,InvoiceRef);
+    			UtilityClassObject.getTest().log( Status.PASS,"CreateInvoice");		
+    		}
     	}
-    	
-//     	
-//     	
- 
 	}
+    public void createInVoiceWithPaidStatus() throws Throwable
+    {
+    	Homepage hP = new Homepage(driver);
+		hP.getBillingAndPaymnets().click();
+		BillingAndPayments bP = new BillingAndPayments(driver);
+    	bP.getCus_NewInvoiceLink().click();
+    	Customer_NewInvoice cNI = new Customer_NewInvoice(driver);
+    	cNI.getCustomerDropdown().click();
+    	cNI.getCustomerTextField().sendKeys(fLib.getDataFromPropertiesFile("customerName"));
+ 	  	WebDriverUtility wDU = new WebDriverUtility();
+ 	  	wDU.waitForPageToLoad(driver);
+ 	  	WebElement CustomerOption = driver.findElement(By.xpath("//li[contains(text(),'"+fLib.getDataFromPropertiesFile("customerName")+"')]"));
+     	wDU.mousemoveOnElement(driver, CustomerOption);
+     	cNI.getStandardRadioButton().click();
+     	cNI.getInvoiceDate().click();
+     	cNI.getPaymentTermDropdown().click();
+    	driver.findElement(By.xpath("//li[text()='30 days']")).click();
+    	cNI.getPaymentMethodDropdown().click();
+        driver.findElement(By.xpath("//li[text()='Cash']")).click();
+        cNI.getCreateDraftBtn().click();
+    	
+    	
+    }
 }

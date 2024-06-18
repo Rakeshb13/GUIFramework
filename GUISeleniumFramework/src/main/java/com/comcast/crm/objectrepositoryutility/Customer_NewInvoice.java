@@ -42,6 +42,74 @@ public class Customer_NewInvoice {
 	
 	@FindBy(xpath = "//div[contains(text(),'PROV')]")
 	private WebElement InvoiceRef;
+	
+	@FindBy(xpath = "//span[@id='select2-idprod-container']")
+	private WebElement addProductDropdown;
+	
+	@FindBy(xpath = "//input[@aria-controls='select2-idprod-results']")
+	private WebElement addProductText;
+
+	@FindBy(id ="addline")
+	private WebElement addProductButton;
+	
+	@FindBy(xpath = "//a[text()='Validate']")
+	private WebElement validateLink;
+	
+	@FindBy(xpath = "//b[contains(text(),'IN2')]")
+	private WebElement ValidatedinvoiceNumb;
+	
+	@FindBy(xpath = "//button[text()='Yes']")
+	private WebElement yesButton;
+	
+	@FindBy(xpath = "//a[text()='Enter payment']")
+	private WebElement enterPaymentLink;
+	
+	@FindBy(className = "amount classfortooltip")
+	private WebElement dueAmount;
+	
+
+	@FindBy(id = "amount_116")
+	private WebElement paymentAmount;
+	
+	@FindBy(xpath = "//input[@value='Pay']")
+	private WebElement payButton;
+
+	
+	
+	
+	
+	
+	public WebElement getAddProductButton() {
+		return addProductButton;
+	}
+
+	public WebElement getValidateLink() {
+		return validateLink;
+	}
+
+	public WebElement getValidatedinvoiceNumb() {
+		return ValidatedinvoiceNumb;
+	}
+
+	public WebElement getYesButton() {
+		return yesButton;
+	}
+
+	public WebElement getEnterPaymentLink() {
+		return enterPaymentLink;
+	}
+
+	public WebElement getAddProductText() {
+		return addProductText;
+	}
+
+	public WebElement getAddProductDropdown() {
+		return addProductDropdown;
+	}
+
+	public WebDriver getDriver() {
+		return driver;
+	}
 
 	public WebElement getInvoiceRef() {
 		return InvoiceRef;

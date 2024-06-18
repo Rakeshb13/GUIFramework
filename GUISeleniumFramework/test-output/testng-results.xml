@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T12:05:49Z" name="Default suite" finished-at="2024-06-17T12:06:24Z" duration-ms="34970">
+  <suite started-at="2024-06-18T03:19:28Z" name="Default suite" finished-at="2024-06-18T03:19:46Z" duration-ms="18526">
     <groups>
     </groups>
-    <test started-at="2024-06-17T12:05:49Z" name="Default test" finished-at="2024-06-17T12:06:24Z" duration-ms="34970">
+    <test started-at="2024-06-18T03:19:28Z" name="Default test" finished-at="2024-06-18T03:19:46Z" duration-ms="18526">
       <class name="com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:05:49Z" name="configBS" finished-at="2024-06-17T12:05:49Z" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:28Z" name="configBS" finished-at="2024-06-18T03:19:28Z" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:05:49Z" name="configBC" finished-at="2024-06-17T12:05:52Z" duration-ms="3281" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:28Z" name="configBC" finished-at="2024-06-18T03:19:35Z" duration-ms="6909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:05:52Z" name="configBM" finished-at="2024-06-17T12:05:54Z" duration-ms="1797" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:35Z" name="configBM" finished-at="2024-06-18T03:19:37Z" duration-ms="1911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createInVoice()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:05:54Z" name="createInVoice" finished-at="2024-06-17T12:06:23Z" duration-ms="28951" status="PASS">
+        <test-method signature="createInVoice()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:37Z" name="createInVoice" finished-at="2024-06-18T03:19:46Z" duration-ms="8803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createInVoice -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:06:23Z" name="configAM" finished-at="2024-06-17T12:06:23Z" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:46Z" name="configAM" finished-at="2024-06-18T03:19:46Z" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:06:23Z" name="configAC" finished-at="2024-06-17T12:06:24Z" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:46Z" name="configAC" finished-at="2024-06-18T03:19:46Z" duration-ms="424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@77102b91]" started-at="2024-06-17T12:06:24Z" name="configAS" finished-at="2024-06-17T12:06:24Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.dolibarr.crm.CustomerInvoice.Customer_InvoiceTest@76a2ddf3]" started-at="2024-06-18T03:19:47Z" name="configAS" finished-at="2024-06-18T03:19:47Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->

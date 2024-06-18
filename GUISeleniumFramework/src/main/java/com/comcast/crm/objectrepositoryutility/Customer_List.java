@@ -29,6 +29,9 @@ public class Customer_List {
 	@FindBy (xpath = "//button[@name='button_search_x']")
 	private WebElement searchButton;
 	
+	@FindBy (xpath = "//tr[@class='oddeven']//td[@class='nowrap center']/span[1]")
+	private WebElement InvoiceStatus;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
