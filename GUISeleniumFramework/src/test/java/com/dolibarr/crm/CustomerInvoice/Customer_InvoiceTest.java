@@ -92,7 +92,28 @@ public class Customer_InvoiceTest extends BaseClass{
     	cNI.getPaymentMethodDropdown().click();
         driver.findElement(By.xpath("//li[text()='Cash']")).click();
         cNI.getCreateDraftBtn().click();
+        cNI.getAddProductDropdown().click();
+        cNI.getAddProductText().sendKeys(fLib.getDataFromPropertiesFile("product"));
+        WebElement product = driver.findElement(By.xpath("//li[contains(text(),'"+fLib.getDataFromPropertiesFile("product")+"')]"));
+        product.click();
+        cNI.getAddProductButton().click();
+        cNI.getValidateLink().click();
+        String InvoiceRef = cNI.getValidatedinvoiceNumb().getText();
+        cNI.getYesButton().click();
+        bP.getCus_listLink().click();
+        Customer_List cL = new Customer_List(driver);
+        List<WebElement> invoiceList = cL.getInvoceList();
+        cL.getSearchRef().sendKeys(InvoiceRef);
+cL.getSearchButton().click();
     	
+    	
+    	for(WebElement i:invoiceList)
+    	{
+    		if(i.equals(invoiceList))
+    		{
+    				
+    		}
+    	}
     	
     }
 }

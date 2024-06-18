@@ -71,7 +71,7 @@ public class Customer_NewInvoice {
 	@FindBy(id = "amount_116")
 	private WebElement paymentAmount;
 	
-	@FindBy(xpath = "//input[@value='Pay']")
+	@FindBy(xpath = "//input[@value	='Pay']")
 	private WebElement payButton;
 
 	
@@ -79,6 +79,18 @@ public class Customer_NewInvoice {
 	
 	
 	
+	public WebElement getDueAmount() {
+		return dueAmount;
+	}
+
+	public WebElement getPaymentAmount() {
+		return paymentAmount;
+	}
+
+	public WebElement getPayButton() {
+		return payButton;
+	}
+
 	public WebElement getAddProductButton() {
 		return addProductButton;
 	}
